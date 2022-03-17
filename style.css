@@ -12,6 +12,7 @@ body {
 .logo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .header {
@@ -19,9 +20,10 @@ body {
   justify-content: space-between;
   padding: 20px 30px 0 30px;
   color: #6070ff;
+  font-size: 25px;
 }
 
-main {
+.hdln-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +39,7 @@ main {
 }
 
 .personal-info {
-  font-size: 20px;
+  font-size: 17px;
   padding: 20px 0;
   color: #344563;
 }
@@ -57,7 +59,7 @@ main {
 }
 
 .social a {
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
   padding: 10px 10px 10px 0;
   margin-right: 5px;
   font-size: 26px;
