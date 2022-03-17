@@ -1,31 +1,57 @@
-# HTML & CSS3 Course
 
-If you are not familiar with linters, read [root level README](../README.md).
+​
+2
+# Alpha-Mobile-portifolio
+3
+​
+4
+> The project focused on creating Mobile version portifolia setup
+5
+​
+6
+​
+7
+## Built With
+8
+​
+9
+- HTML
+10
+- CSS
+11
+​
+12
+## Live Demo (if available)
+13
+-No live Demo
+14
+​
+15
+## Getting Started
+16
+-Used the microverse linter documentation
+17
+-set up linter for HTML and CSS
+18
+​
+19
+## Authors
+20
+👤 **Author1**
+21
+- GitHub: [@githubhandle](https://github.com/AlphaNtihinduka)
+22
+- Twitter: [@twitterhandle](https://twitter.com/AlphaNtihinduka)
+23
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ntihinduka-alpha-81bb7b22a/)
+24
+​
+25
+ 
 
-## Set-up GitHub Actions
-
-Please do the following **steps in this order**:
-
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-   - **Remember** to use the file linked above
-   - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub actions checks:
-
-![gh actions checks](../assets/images/gh-actions-html-css-checks.png)
-
-Click on the `Details` link of each action to see the full output and the errors that need to be fixed:
-
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
-
-## Set-up linters in your local env
-
-**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
-
-```
 # .gitignore
 node_modules/
+test.md
 ```
 
 ### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
