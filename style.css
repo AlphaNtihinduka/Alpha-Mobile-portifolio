@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -221,4 +221,19 @@ body {
   padding: 10px 10px 10px 0;
   margin-right: 5px;
   font-size: 25px;
+}
+
+/* CONTACT FORM STYLE */
+#footer {
+  background-color: #6070ff;
+  position: relative;
+  background-image: url(./images/header-shapesmobile.png);
+  background-repeat: no-repeat;
+  border-top-left-radius: 110px;
+  margin-top: 50px;
+}
+
+.parent-form {
+  text-align: center;
+  padding: 150px 25px 10px 25px;
 }
