@@ -46,7 +46,8 @@
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ntihinduka-alpha-81bb7b22a/)
 24
 ​
-25
+25 **Author1**
+Name: Sebastian Daniel Solis Fenger.
  
 
 # .gitignore
