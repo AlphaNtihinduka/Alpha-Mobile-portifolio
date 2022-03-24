@@ -59,6 +59,11 @@ html {
   border: 2px solid #dfe1e6;
   border-radius: 15px;
   line-height: 50px;
+  transition: transform 0.5s linear;
+}
+
+.child-worksCard-info:hover {
+  transform: scale(1.1);
 }
 
 .prjct-title {
