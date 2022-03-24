@@ -9,10 +9,26 @@ body {
   font-family: sans-serif;
 }
 
+html {
+  font-family: "poppins", sans-serif;
+}
+
 .logo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
+  color: #6070ff;
+  animation: logoRotation 2s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes logoRotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header {
@@ -21,6 +37,19 @@ body {
   padding: 20px 30px 30px 30px;
   color: #6070ff;
   font-size: 25px;
+}
+
+.header-links {
+  display: flex;
+  display: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #344563;
+  float: left;
 }
 
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
@@ -41,6 +70,20 @@ body {
   background-color: #fff;
   border: 2px solid #dfe1e6;
   border-radius: 15px;
+  line-height: 50px;
+  transition: transform 0.5s linear;
+}
+
+.child-worksCard-info:hover {
+  transform: scale(1.1);
+}
+
+.child-worksCard-info img {
+  transition: all 0.5s;
+}
+
+.child-worksCard-info img:hover {
+  transform: scale(1.06);
 }
 
 .prjct-title {
@@ -76,7 +119,7 @@ body {
 }
 
 .works-card1 .description {
-  padding: 20px 0;
+  padding: 20px 15px 20px 0;
   color: #344563;
   line-height: 1.4;
 }
@@ -114,12 +157,26 @@ body {
   border: 1px solid #396df2;
   margin-top: 15px;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-description .see-prjct {
+  float: none;
+}
+
+.lang-left .see-prjct {
+  float: left;
 }
 
 .see-prjct:hover {
   background-color: #6070ff;
   color: #fff;
-  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 /* Part of About self section style */
@@ -188,6 +245,11 @@ body {
   padding: 0 30px;
   background-image: url(./images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hdln-img-container {
+  display: none;
 }
 
 .name-intro {
@@ -228,14 +290,23 @@ body {
   background-color: #6070ff;
   position: relative;
   background-image: url(./images/header-shapesmobile.png);
+  background-size: contain;
   background-repeat: no-repeat;
   border-top-left-radius: 110px;
+  background-position: center;
   margin-top: 50px;
+}
+
+.contact-descr {
+  text-align: center;
+  max-width: 500px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 .parent-form {
   text-align: center;
-  padding: 150px 25px 10px 25px;
+  padding: 90px 25px 10px 25px;
 }
 
 .contact-heading {
@@ -248,6 +319,11 @@ body {
   font-size: 20px;
   color: #ebebff;
   padding: 40px 0;
+  transition: transform 0.4s linear;
+}
+
+.contact-description:hover {
+  transform: translate(10px);
 }
 
 .inputs-holder {
@@ -273,4 +349,209 @@ body {
   max-height: 170px;
   border-radius: 8px;
   padding: 15px;
+}
+
+/* DESKTOP VERSION MEDIA QUERY */
+@media (min-width: 376px) {
+  body {
+    max-width: 100%;
+  }
+
+  .grid-works {
+    grid-template-rows: repeat(4, 650px);
+  }
+
+  .parent-form .inputs-holder {
+    width: 330px;
+    margin: 0 auto 20px auto;
+  }
+
+  .inputs-holder input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    max-width: 100%;
+  }
+
+  .grid-works {
+    grid-template-rows: repeat(4, 700px);
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    max-width: 100%;
+  }
+
+  .grid-works {
+    grid-template-rows: repeat(4, 800px);
+  }
+
+  .see-prjct {
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
+  .header-links {
+    display: block;
+    font-size: 15px;
+  }
+
+  .header-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .hdln-section {
+    height: 100vh;
+    background-image: url(./images/back-header.png);
+    background-size: contain;
+    background-position: right;
+  }
+
+  .hdln-img-container {
+    height: 100vh;
+    width: 95vw;
+    position: absolute;
+    display: block;
+  }
+
+  .hdln-img-container img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner-text-container {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    max-width: 800px;
+  }
+
+  .child-worksCard-info {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reversed-card2-4 {
+    flex-direction: row-reverse;
+  }
+
+  .works-card1 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .card-description {
+    margin-left: 35px;
+    max-width: 60%;
+  }
+
+  .grid-works {
+    grid-template-rows: repeat(4, 380px);
+    gap: 10px 50px;
+    padding: 40px 30px;
+    background-color: #f7f7f9;
+  }
+
+  .about-section-card {
+    flex-direction: row;
+    padding-left: 80px;
+    justify-content: left;
+  }
+
+  .lang-left {
+    max-width: 40%;
+    padding-left: 0;
+  }
+
+  .lang-right {
+    max-width: 60%;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  .lang-box {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    padding: 5px 35px 40px 5px;
+    position: relative;
+  }
+
+  .lang-box p {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    font-size: 16px;
+  }
+
+  .frame-Skill {
+    position: absolute;
+    top: 45%;
+    width: 95%;
+  }
+
+  .frame-Skill .frame-skl-container {
+    list-style: none;
+  }
+
+  #footer {
+    background-color: #6070ff;
+    background-image: url(./images/back-footer.png);
+    height: 846px;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .mini-footer {
+    padding-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .parent-form {
+    max-width: 600px;
+    height: 60%;
+    padding-top: 10px;
+  }
+
+  .parent-form .inputs-holder {
+    width: 100%;
+  }
+
+  .inputs-holder input {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .parent-form .message {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .see-prjct {
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+
+  .contact-descr {
+    text-align: center;
+  }
 }
