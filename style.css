@@ -77,6 +77,14 @@ html {
   transform: scale(1.1);
 }
 
+.child-worksCard-info img {
+  transition: all 0.5s;
+}
+
+.child-worksCard-info img:hover {
+  transform: scale(1.06);
+}
+
 .prjct-title {
   padding: 20px 0;
   line-height: 1.5;
