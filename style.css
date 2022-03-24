@@ -9,10 +9,14 @@ body {
   font-family: sans-serif;
 }
 
+html {
+  font-family: "poppins", sans-serif;
+}
+
 .logo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
+  color: #6070ff;
 }
 
 .header {
@@ -127,6 +131,14 @@ body {
   border: 1px solid #396df2;
   margin-top: 15px;
   cursor: pointer;
+}
+
+.card-description .see-prjct {
+  float: left;
+}
+
+.lang-left .see-prjct {
+  float: left;
 }
 
 .see-prjct:hover {
@@ -246,18 +258,23 @@ body {
   background-color: #6070ff;
   position: relative;
   background-image: url(./images/header-shapesmobile.png);
+  background-size: contain;
   background-repeat: no-repeat;
   border-top-left-radius: 110px;
+  background-position: center;
   margin-top: 50px;
 }
 
-.footer-img-container {
-  display: none;
+.contact-descr {
+  text-align: center;
+  max-width: 500px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 .parent-form {
   text-align: center;
-  padding: 150px 25px 10px 25px;
+  padding: 90px 25px 10px 25px;
 }
 
 .contact-heading {
@@ -363,7 +380,9 @@ body {
 
   .hdln-section {
     height: 100vh;
-    background-image: url(./images/heade-shapes\ mobile.png);
+    background-image: url(./images/back-header.png);
+    background-size: contain;
+    background-position: right;
   }
 
   .hdln-img-container {
@@ -400,7 +419,7 @@ body {
   }
 
   .card-description {
-    margin-left: 55px;
+    margin-left: 35px;
     max-width: 60%;
   }
 
@@ -418,19 +437,19 @@ body {
   }
 
   .lang-left {
-    max-width: 50%;
+    max-width: 40%;
     padding-left: 0;
   }
 
   .lang-right {
-    width: 700px;
-    padding-left: 20px;
+    max-width: 60%;
+    padding-left: 10px;
     position: relative;
   }
 
   .lang-box {
     float: left;
-    margin-right: 12px;
+    margin-right: 5px;
     margin-bottom: 30px;
     padding: 5px 35px 40px 5px;
     position: relative;
@@ -440,43 +459,62 @@ body {
     position: absolute;
     top: 60px;
     left: 10px;
+    font-size: 16px;
   }
 
   .frame-Skill {
     position: absolute;
-    bottom: 15px;
+    top: 45%;
     width: 95%;
+  }
+
+  .frame-Skill .frame-skl-container {
+    list-style: none;
   }
 
   #footer {
     background-color: #6070ff;
-    background-image: url(./images/header-shaesmobile.png);
-  }
-
-  .footer-img-container {
-    width: 98vw;
-    height: 900px;
-    padding: 20px 60px;
-    display: block;
-  }
-
-  .footer-img-container img {
+    background-image: url(./images/back-footer.png);
+    height: 846px;
     width: 100%;
-    height: 100%;
+    background-size: contain;
+    background-position: bottom;
   }
 
   .mini-footer {
-    position: relative;
+    padding-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .parent-form {
-    position: absolute;
-    top: 10px;
-    left: 30%;
+    max-width: 600px;
+    height: 60%;
+    padding-top: 10px;
+  }
+
+  .parent-form .inputs-holder {
+    width: 100%;
+  }
+
+  .inputs-holder input {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .parent-form .message {
+    border-radius: 0;
+    width: 100%;
   }
 
   .see-prjct {
     display: block;
     margin: 10px auto 0 auto;
+  }
+
+  .contact-descr {
+    text-align: center;
   }
 }
