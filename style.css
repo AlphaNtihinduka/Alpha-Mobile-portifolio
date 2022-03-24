@@ -58,6 +58,7 @@ html {
   background-color: #fff;
   border: 2px solid #dfe1e6;
   border-radius: 15px;
+  line-height: 50px;
 }
 
 .prjct-title {
@@ -133,8 +134,13 @@ html {
   cursor: pointer;
 }
 
+.card-description {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-description .see-prjct {
-  float: left;
+  float: none;
 }
 
 .lang-left .see-prjct {
