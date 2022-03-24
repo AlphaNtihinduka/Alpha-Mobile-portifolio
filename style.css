@@ -23,6 +23,19 @@ body {
   font-size: 25px;
 }
 
+.header-links {
+  display: flex;
+  display: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #344563;
+  float: left;
+}
+
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
 .grid-works {
   display: grid;
@@ -188,6 +201,11 @@ body {
   padding: 0 30px;
   background-image: url(./images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hdln-img-container {
+  display: none;
 }
 
 .name-intro {
@@ -273,4 +291,50 @@ body {
   max-height: 170px;
   border-radius: 8px;
   padding: 15px;
+}
+
+/* DESKTOP VERSION MEDIA QUERY */
+@media (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
+  .header-links {
+    display: block;
+    font-size: 15px;
+  }
+
+  .header-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .hdln-section {
+    height: 100vh;
+    background-image: url(./images/heade-shapes\ mobile.png);
+  }
+
+  .hdln-img-container {
+    height: 100vh;
+    width: 95vw;
+    position: absolute;
+    display: block;
+  }
+
+  .hdln-img-container img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner-text-container {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    max-width: 800px;
+  }
+  
 }
