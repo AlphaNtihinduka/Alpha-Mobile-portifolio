@@ -137,6 +137,7 @@ html {
   border: 1px solid #396df2;
   margin-top: 15px;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .card-description {
@@ -155,7 +156,7 @@ html {
 .see-prjct:hover {
   background-color: #6070ff;
   color: #fff;
-  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 /* Part of About self section style */
@@ -298,6 +299,11 @@ html {
   font-size: 20px;
   color: #ebebff;
   padding: 40px 0;
+  transition: transform 0.4s linear;
+}
+
+.contact-description:hover {
+  transform: translate(10px);
 }
 
 .inputs-holder {
