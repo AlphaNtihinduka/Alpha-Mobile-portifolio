@@ -342,20 +342,61 @@ body {
     justify-content: center;
   }
 
+  .reversed-card2-4 {
+    flex-direction: row-reverse;
+  }
+
   .works-card1 {
     width: 85%;
     margin: 0 auto;
   }
 
   .card-description {
-    margin-left: 50px;
+    margin-left: 55px;
     max-width: 60%;
   }
 
   .grid-works {
-    grid-template-rows: repeat(4, 350px);
+    grid-template-rows: repeat(4, 380px);
     gap: 10px 50px;
     padding: 40px 30px;
     background-color: #f7f7f9;
+  }
+
+  .about-section-card {
+    flex-direction: row;
+    padding-left: 80px;
+    justify-content: left;
+  }
+
+  .lang-left {
+    max-width: 50%;
+    padding-left: 0;
+  }
+
+  .lang-right {
+    width: 700px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .lang-box {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    padding: 5px 35px 40px 5px;
+    position: relative;
+  }
+
+  .lang-box p {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+  }
+
+  .frame-Skill {
+    position: absolute;
+    bottom: 15px;
+    width: 95%;
   }
 }
