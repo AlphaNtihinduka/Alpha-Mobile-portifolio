@@ -89,7 +89,7 @@ body {
 }
 
 .works-card1 .description {
-  padding: 20px 0;
+  padding: 20px 15px 20px 0;
   color: #344563;
   line-height: 1.4;
 }
@@ -336,5 +336,26 @@ body {
     left: 15%;
     max-width: 800px;
   }
-  
+
+  .child-worksCard-info {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .works-card1 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .card-description {
+    margin-left: 50px;
+    max-width: 60%;
+  }
+
+  .grid-works {
+    grid-template-rows: repeat(4, 350px);
+    gap: 10px 50px;
+    padding: 40px 30px;
+    background-color: #f7f7f9;
+  }
 }
