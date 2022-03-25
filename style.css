@@ -412,6 +412,9 @@ ul {
 
   .grid-works {
     grid-template-rows: repeat(4, 450px) !important;
+    gap: 10px 50px;
+    padding: 40px 30px;
+    background-color: #f7f7f9;
   }
 
   .header-links {
@@ -462,13 +465,6 @@ ul {
   .card-description {
     margin-left: 35px;
     max-width: 60%;
-  }
-
-  .grid-works {
-    grid-template-rows: repeat(4, 380px);
-    gap: 10px 50px;
-    padding: 40px 30px;
-    background-color: #f7f7f9;
   }
 
   .about-section-card {
