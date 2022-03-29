@@ -215,7 +215,7 @@ ul {
 
 .language-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 8px 0 8px 10px;
   background-color: #f7f7f9;
   position: relative;
@@ -224,15 +224,11 @@ ul {
 }
 
 .language {
-  position: absolute;
-  top: 40%;
-  right: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 10px;
   font-size: 15px;
   font-weight: bold;
-}
-
-.css-html-lng {
-  right: 60%;
 }
 
 .frame-skl-container {
@@ -285,6 +281,7 @@ ul {
   max-width: 150px;
   list-style: none;
   padding-top: 20px;
+  align-items: center;
 }
 
 .social a {
@@ -519,6 +516,10 @@ ul {
   .language-container {
     background-color: #f7f7f9;
     color: #253858;
+  }
+
+  .language {
+    padding: 0;
   }
 
   .frame-Skill {
