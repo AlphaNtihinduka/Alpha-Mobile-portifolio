@@ -231,11 +231,6 @@ ul {
   font-weight: bold;
 }
 
-.css-html-lng {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .frame-skl-container {
   display: flex;
   justify-content: space-between;
@@ -520,6 +515,10 @@ ul {
   .language-container {
     background-color: #f7f7f9;
     color: #253858;
+  }
+
+  .language {
+    padding: 0;
   }
 
   .frame-Skill {
