@@ -215,7 +215,7 @@ ul {
 
 .language-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 8px 0 8px 10px;
   background-color: #f7f7f9;
   position: relative;
@@ -224,15 +224,16 @@ ul {
 }
 
 .language {
-  position: absolute;
-  top: 40%;
-  right: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 10px;
   font-size: 15px;
   font-weight: bold;
 }
 
 .css-html-lng {
-  right: 60%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .frame-skl-container {
