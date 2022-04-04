@@ -57,6 +57,43 @@ ul {
   float: left;
 }
 
+.fa-times {
+  display: none;
+}
+
+.header-links.header-links-active {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(37, 45, 165, 0.8);
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 30px;
+  z-index: 20;
+  transition: 0.5s;
+}
+
+.header-links.header-links-active a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-links.fa-times-active {
+  left: -100%;
+}
+
+.fa-times.fa-times-active {
+  display: block;
+  color: #fff;
+  z-index: 23;
+}
+
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
 .grid-works {
   display: grid;
