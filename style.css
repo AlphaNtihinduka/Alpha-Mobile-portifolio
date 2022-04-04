@@ -8,6 +8,7 @@ body {
   max-width: 378px;
   font-family: "poppins", sans-serif;
   background-color: #f7f7f9;
+  position: relative;
 }
 
 html {
@@ -57,11 +58,50 @@ ul {
   float: left;
 }
 
-.fa-times {
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(96, 112, 255, 0.97);
+
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: none;
 }
 
-.header-links.header-links-active {
+.menu-bar.active-bar {
+  display: block;
+}
+
+.header-slide-links {
+  color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 30px;
+  z-index: 20;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.fa-times {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+}
+
+.header-slide-links a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* .header-links.header-links-active {
   display: block;
   display: flex;
   flex-direction: column;
@@ -75,16 +115,16 @@ ul {
   padding: 70px 30px;
   z-index: 20;
   transition: 0.5s;
-}
+} */
 
-.header-links.header-links-active a {
+/* .header-links.header-links-active a {
   color: #fff;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-}
+} */
 
-.header-links.fa-times-active {
+/* .header-links.fa-times-active {
   left: -100%;
 }
 
@@ -92,7 +132,7 @@ ul {
   display: block;
   color: #fff;
   z-index: 23;
-}
+} */
 
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
 .grid-works {
