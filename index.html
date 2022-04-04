@@ -31,7 +31,6 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <i class="fa fa-times"></i>
     </header>
     <main>
       <!-- THIS IS A SECTION FOR MOBILE PORTIFOLIO SKELETON -->
@@ -326,25 +325,15 @@
         </form>
       </div>
     </footer>
-<script>
-  let humbergerBtn = document.querySelector(".fa-bars");
-  let timesBtn = document.querySelector(".fa-times");
-  let headerLinks = document.querySelector(".header-links");
 
-
-  humbergerBtn.addEventListener("click", function(){
-      headerLinks.classList.toggle("header-links-active");
-      timesBtn.classList.toggle("fa-times-active");
-      humbergerBtn.style.display = "none";
-  
-  })
-  timesBtn.addEventListener("click", function(){
-      headerLinks.classList.toggle("fa-times-active");
-      humbergerBtn.style.display = "block";
-      timesBtn.style.display = "none";
-  })
-
-</script>
-
+    <div class="menu-bar">
+         <i class="fa fa-times"></i>
+        <ul class="header-slide-links">
+          <li><a href="#">Portifolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+<script src="script.js"></script>
   </body>
 </html>
