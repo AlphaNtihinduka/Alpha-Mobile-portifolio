@@ -62,17 +62,13 @@ ul {
   display: flex;
   flex-direction: column;
   background-color: rgba(96, 112, 255, 0.97);
-
   position: relative;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   display: none;
-}
-
-.menu-bar.active-bar {
-  display: block;
+  height: 200vh;
 }
 
 .header-slide-links {
@@ -89,15 +85,17 @@ ul {
 .fa-times {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 8%;
   color: #fff;
+  height: 12px;
+  width: 12px;
 }
 
 .header-slide-links a {
   color: #fff;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-decoration: none;
 }
 
@@ -294,7 +292,8 @@ ul {
   justify-content: center;
   min-height: 90vh;
   padding: 0 30px;
-  background-image: url(./images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapesmobile1.png);
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
