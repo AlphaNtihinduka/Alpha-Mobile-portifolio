@@ -59,16 +59,14 @@ ul {
 }
 
 .menu-bar {
-  display: flex;
   flex-direction: column;
   background-color: rgba(96, 112, 255, 0.97);
-  position: relative;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: none;
-  height: 200vh;
+  height: 100vh;
 }
 
 .header-slide-links {
