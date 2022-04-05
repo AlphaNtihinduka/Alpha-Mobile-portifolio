@@ -42,9 +42,14 @@
 25 **Author2**
 Name: Sebastian Daniel Solis Fenger.
 
- **Author2**
+ **Author3**
 Name: Roberto Banos.
  
+
+ **Author4**
+ Name: Emilia Zambrano.
+ Github: (https://github.com/emiliazm)
+
 
 # .gitignore
 node_modules/

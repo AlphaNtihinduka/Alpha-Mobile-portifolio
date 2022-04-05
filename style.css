@@ -8,6 +8,7 @@ body {
   max-width: 378px;
   font-family: "poppins", sans-serif;
   background-color: #f7f7f9;
+  position: relative;
 }
 
 html {
@@ -55,6 +56,49 @@ ul {
   text-decoration: none;
   color: #344563;
   float: left;
+}
+
+.menu-bar {
+  flex-direction: column;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(7px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  height: 100vh;
+}
+
+.header-slide-links {
+  color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 30px;
+  z-index: 20;
+  transition: 0.5s;
+}
+
+.fa-times {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  color: #fff;
+  height: 12px;
+  width: 12px;
+}
+
+.header-slide-links a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-slide-links li {
+  padding: 8px;
 }
 
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
@@ -246,7 +290,8 @@ ul {
   justify-content: center;
   min-height: 90vh;
   padding: 0 30px;
-  background-image: url(./images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapesmobile1.png);
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
