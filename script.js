@@ -1,12 +1,10 @@
-let humbergerBtn = document.querySelector(".fa-bars");
-let timesBtn = document.querySelector(".fa-times");
-let menuBar = document.querySelector(".menu-bar");
+const humbergerBtn = document.querySelector('.fa-bars');
+const timesBtn = document.querySelector('.fa-times');
+const menuBar = document.querySelector('.menu-bar');
 
-
-humbergerBtn.addEventListener("click", function(){
-    menuBar.style.display = "block";
-
-})
-timesBtn.addEventListener("click", function(){
-    menuBar.style.display = "none";
-})
+humbergerBtn.addEventListener('click', () => {
+  menuBar.style.display = 'block';
+});
+timesBtn.addEventListener('click', () => {
+  menuBar.style.display = 'none';
+});
