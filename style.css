@@ -60,7 +60,8 @@ ul {
 
 .menu-bar {
   flex-direction: column;
-  background-color: rgba(96, 112, 255, 0.97);
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(7px);
   position: fixed;
   top: 0;
   left: 0;
@@ -75,7 +76,7 @@ ul {
   top: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 70px 30px;
+  padding: 50px 30px;
   z-index: 20;
   transition: 0.5s;
 }
@@ -93,12 +94,11 @@ ul {
   color: #fff;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 15px;
   text-decoration: none;
 }
 
 .header-slide-links li {
-  padding: 20px;
+  padding: 8px;
 }
 
 /* ☎ ☎ ☎ MOBILE VERSION STLYLE ☎ ☎ */
