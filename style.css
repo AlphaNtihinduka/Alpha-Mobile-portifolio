@@ -210,6 +210,22 @@ ul {
   transition: all 0.3s linear;
 }
 
+.popup-container {
+  background-color: rgba(8, 94, 83, 0.9);
+  color: #fff;
+  width: 420px;
+  height: 500px;
+  padding: 30px 40px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 .card-description {
   display: flex;
   flex-direction: column;
