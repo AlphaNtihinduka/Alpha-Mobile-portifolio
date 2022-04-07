@@ -3,11 +3,12 @@ const btnPopup2 = document.querySelector(".card-2-btn");
 const btnPopup3 = document.querySelector(".card-3-btn");
 const btnPopup4 = document.querySelector(".card-4-btn");
 const crossBtn = document.querySelector(".fa-times");
-const anypop = document.querySelectorAll(".popup-container")
 const popupContainer = document.querySelector(".popup-container");
+const overLayContainer = document.querySelector(".overlay-container");
 const newElement = document.createElement("div");
 popupContainer.append(newElement);
 newElement.setAttribute("class", "pop-container-child");
+const anypop = document.querySelectorAll(".overlay-container")
 let popupObj = [
   {
     name: "Tonic",
@@ -108,11 +109,11 @@ btnPopup1.addEventListener("click", () => {
             </div>
         </div>
    `;
-
+   overLayContainer.style.display = "block"
   popupContainer.style.display = "block";
 });
 anypop.forEach(n => n.addEventListener("click", () => {
-    popupContainer.style.display ="none";
+    overLayContainer.style.display ="none";
   }))
 
   btnPopup2.addEventListener("click", () => {
@@ -151,7 +152,7 @@ anypop.forEach(n => n.addEventListener("click", () => {
               </div>
           </div>
      `;
-  
+     overLayContainer.style.display = "block";
     popupContainer.style.display = "block";
   });
 
@@ -191,7 +192,7 @@ anypop.forEach(n => n.addEventListener("click", () => {
               </div>
           </div>
      `;
-  
+     overLayContainer.style.display = "block"
     popupContainer.style.display = "block";
   });
 
@@ -231,7 +232,7 @@ anypop.forEach(n => n.addEventListener("click", () => {
               </div>
           </div>
      `;
-  
+     overLayContainer.style.display = "block"
     popupContainer.style.display = "block";
   });
 
