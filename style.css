@@ -328,6 +328,7 @@ hr {
   flex-direction: row;
   white-space: nowrap;
   gap: 10%;
+  cursor: pointer;
 }
 
 .pop-btn-container {
