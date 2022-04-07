@@ -8,6 +8,13 @@ const newElement = document.createElement('div');
 popupContainer.append(newElement);
 newElement.setAttribute('class', 'pop-container-child');
 const anypop = document.querySelectorAll('.overlay-container');
+
+        // form contact
+const form = document.querySelector("form");
+const emailInput = document.querySelector(".email");
+const submitButton = document.querySelector(".see-prjct-footer");
+const errorMessage = document.querySelector(".error-message");
+
 const popupObj = [
   {
     name: 'Tonic',
