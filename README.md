@@ -10,6 +10,7 @@
 
 - HTML
 - CSS
+-JAVASCRIPT
 ​
 ## Live Demo (if available)
 
@@ -22,6 +23,7 @@
 
 -set up linter for HTML and CSS
 
+-Install eslintrc.json.
 
 ## Authors
 
@@ -47,8 +49,12 @@ Name: Roberto Banos.
  
 
  **Author4**
- Name: Emilia Zambrano.
- Github: (https://github.com/emiliazm)
+ 👤 **Emilia Zambrano**
+
+- GitHub: [@emiliazm](https://github.com/emiliazm)
+- Twitter: [@emilia_zm](https://twitter.com/emilia_zm)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emilia-zambrano-montero-aa30a611b/)
+
 
 
 # .gitignore

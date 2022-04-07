@@ -542,10 +542,6 @@ hr {
   justify-content: center;
 }
 
-.email {
-  color: red;
-}
-
 /* DESKTOP VERSION MEDIA QUERY */
 @media (min-width: 376px) {
   body {
