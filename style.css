@@ -15,6 +15,10 @@ html {
   font-family: "poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -280,13 +284,22 @@ ul {
   border: 1px solid #6070ff;
   color: #6070ff;
   font-size: 15px;
-  margin: 5px auto;
   border-radius: 8px;
-  padding: 10px 10px;
+  margin-top: 10px;
+  padding: 10px 25px;
   background-color: #fff;
   line-height: 20px;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   flex-direction: row;
+  white-space: nowrap;
+  gap: 10%;
+}
+
+.pop-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
 }
 
 .icon-img {
@@ -714,15 +727,18 @@ ul {
 
   .desc-link-container {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    border: 1px solid orange;
   }
 
   .popup_description {
-    width: 65%;
+    max-width: 60%;
   }
 
   .link-btn-container {
     border: 1px solid #000;
     margin-left: 10px;
+    min-width: 45%;
   }
 }
