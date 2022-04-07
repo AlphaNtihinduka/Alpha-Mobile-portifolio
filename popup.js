@@ -8,6 +8,10 @@ const newElement = document.createElement('div');
 popupContainer.append(newElement);
 newElement.setAttribute('class', 'pop-container-child');
 const anypop = document.querySelectorAll('.overlay-container');
+const form = document.querySelector('form');
+const emailInput = document.querySelector('.email');
+const errorMessage = document.querySelector('.error-message');
+
 const popupObj = [
   {
     name: 'Tonic',
@@ -237,4 +241,14 @@ btnPopup4.addEventListener('click', () => {
      `;
   overLayContainer.style.display = 'block';
   popupContainer.style.display = 'block';
+});
+
+const validEmail = /^[a-z@.0-9-_]*$/;
+form.addEventListener('submit', (e) => {
+  if (emailInput.value.trim().match(validEmail)) {
+    errorMessage.style.display = 'none';
+  } else {
+    e.preventDefault();
+    errorMessage.style.display = 'flex';
+  }
 });

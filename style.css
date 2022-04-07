@@ -534,6 +534,16 @@ hr {
   padding: 15px;
 }
 
+.error-message {
+  font-size: 20px;
+  padding: 20px;
+  color: red;
+  display: none;
+  margin: 10px auto;
+  background-color: #fff;
+  max-width: 320px;
+}
+
 /* DESKTOP VERSION MEDIA QUERY */
 @media (min-width: 376px) {
   body {
@@ -787,7 +797,3 @@ hr {
     gap: 10%;
   }
 }
-
-margin-bottom: 16px;
-margin-left: 15px;
-display: inline-block;
