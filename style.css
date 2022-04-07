@@ -534,6 +534,18 @@ hr {
   padding: 15px;
 }
 
+.error-message {
+  font-size: 20px;
+  padding-top: 20px;
+  color: red;
+  display: none;
+  justify-content: center;
+}
+
+.email {
+  color: red;
+}
+
 /* DESKTOP VERSION MEDIA QUERY */
 @media (min-width: 376px) {
   body {
