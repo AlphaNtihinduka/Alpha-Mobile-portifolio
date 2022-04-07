@@ -300,14 +300,17 @@
           method="post"
         >
           <div class="inputs-holder">
-            <input
-              type="text"
-              class="name"
-              name="name"
-              placeholder="Enter your name"
-              maxlength="30"
-              required=""
-            />
+            <fieldset class="input-container">
+              <input
+                type="text"
+                class="name"
+                name="name"
+                placeholder="Enter your name"
+                maxlength="30"
+                required=""
+              />
+            </fieldset>
+          <fieldset class="email-container">
             <input
               type="email"
               class="email"
@@ -316,7 +319,9 @@
               maxlength="30"
               required=""
             />
+          </fieldset>
           </div>
+          <fieldset class="input-container">
           <textarea
             rows="5"
             name="message"
@@ -325,6 +330,7 @@
             maxlength="500"
             required=""
           ></textarea>
+          </fieldset>
           <button
             type="submit"
             class="see-prjct see-prjct-footer"
@@ -332,6 +338,7 @@
           >
             Get In Touch
           </button>
+          <p class="error-message"> *Check your email again</p>
         </form>
       </div>
     </footer>
