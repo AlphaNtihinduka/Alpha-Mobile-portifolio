@@ -101,6 +101,7 @@ btnPopup1.addEventListener('click', () => {
         <p class="popup_description">${popupObj[objtracker].description}</p>
             <div class="link-btn-container">
             <div class="skills-popup"> ${output} </div>
+            <hr>
             <div class="pop-btn-container">
             <a href = ${popupObj[objtracker].link_live} target="__blank" class="pop-link"> <button type="button"> See live <span> <img src="${popupObj[objtracker].live_icon}" class="icon-img"></span></button> </a> 
             <a href = ${popupObj[objtracker].link_source} target="__blank" class="pop-link"> <button type="button"> See Source <span> <img src="${popupObj[objtracker].source_icon}"></span> </button> </a> 
@@ -144,6 +145,7 @@ btnPopup2.addEventListener('click', () => {
           <p class="popup_description">${popupObj[objtracker].description}</p>
               <div class="link-btn-container">
               <div class="skills-popup"> ${output} </div>
+              <hr>
               <div class="pop-btn-container">
               <a href = ${popupObj[objtracker].link_live} target="__blank" class="pop-link"> <button type="button"> See live <span> <img src="${popupObj[objtracker].live_icon}" class="icon-img"></span></button> </a> 
               <a href = ${popupObj[objtracker].link_source} target="__blank" class="pop-link"> <button type="button"> See Source <span> <img src="${popupObj[objtracker].source_icon}"></span> </button> </a> 
@@ -184,6 +186,7 @@ btnPopup3.addEventListener('click', () => {
           <p class="popup_description">${popupObj[objtracker].description}</p>
               <div class="link-btn-container">
               <div class="skills-popup"> ${output} </div>
+              <hr>
               <div class="pop-btn-container">
               <a href = ${popupObj[objtracker].link_live} target="__blank" class="pop-link"> <button type="button"> See live <span> <img src="${popupObj[objtracker].live_icon}" class="icon-img"></span></button> </a> 
               <a href = ${popupObj[objtracker].link_source} target="__blank" class="pop-link"> <button type="button"> See Source <span> <img src="${popupObj[objtracker].source_icon}"></span> </button> </a> 
@@ -224,6 +227,7 @@ btnPopup4.addEventListener('click', () => {
           <p class="popup_description">${popupObj[objtracker].description}</p>
               <div class="link-btn-container">
               <div class="skills-popup"> ${output} </div>
+              <hr>
               <div class="pop-btn-container">
               <a href = ${popupObj[objtracker].link_live} target="__blank" class="pop-link"> <button type="button"> See live <span> <img src="${popupObj[objtracker].live_icon}" class="icon-img"></span></button> </a> 
               <a href = ${popupObj[objtracker].link_source} target="__blank" class="pop-link"> <button type="button"> See Source <span> <img src="${popupObj[objtracker].source_icon}"></span> </button> </a> 
