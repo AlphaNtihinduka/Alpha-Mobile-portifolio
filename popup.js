@@ -15,8 +15,9 @@ const emailInput = document.querySelector(".email");
 const submitButton = document.querySelector(".see-prjct-footer");
 const errorMessage = document.querySelector(".error-message");
 
+const validEmail = /^[a-z@.0-9-_]*$/
 form.addEventListener("submit", (e)=>{
-  if(emailInput.value.match(/^[a-z@.0-9-_]*$/)){
+  if(emailInput.value.trim().match(validEmail)){
       errorMessage.style.display = "none";
   } else {
       e.preventDefault();
