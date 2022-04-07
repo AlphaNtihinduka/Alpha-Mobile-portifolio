@@ -286,7 +286,7 @@ ul {
   font-size: 15px;
   border-radius: 8px;
   margin-top: 10px;
-  padding: 10px 25px;
+  padding: 10px 30px;
   background-color: #fff;
   line-height: 20px;
   display: flex;
@@ -300,6 +300,7 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 5%;
+  margin-top: 20px;
 }
 
 .icon-img {
@@ -734,8 +735,7 @@ ul {
 
   .popup_description {
     max-width: 60%;
-    line-height: 200%;
-    font-size: 70%;
+    font-size: 16px;
   }
 
   .link-btn-container {
@@ -746,6 +746,7 @@ ul {
 
   .pop-link button {
     padding: 5% 10%;
+    width: 130px;
   }
 
   .pop-btn-container {
