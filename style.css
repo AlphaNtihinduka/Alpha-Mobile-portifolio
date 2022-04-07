@@ -536,10 +536,12 @@ hr {
 
 .error-message {
   font-size: 20px;
-  padding-top: 20px;
+  padding: 20px;
   color: red;
   display: none;
-  justify-content: center;
+  margin: 10px auto;
+  background-color: #fff;
+  max-width: 320px;
 }
 
 /* DESKTOP VERSION MEDIA QUERY */
