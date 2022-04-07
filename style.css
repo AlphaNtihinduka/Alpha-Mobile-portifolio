@@ -299,7 +299,7 @@ ul {
 .pop-btn-container {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 5%;
 }
 
 .icon-img {
@@ -734,11 +734,21 @@ ul {
 
   .popup_description {
     max-width: 60%;
+    line-height: 200%;
+    font-size: 70%;
   }
 
   .link-btn-container {
     border: 1px solid #000;
     margin-left: 10px;
     min-width: 45%;
+  }
+
+  .pop-link button {
+    padding: 5% 10%;
+  }
+
+  .pop-btn-container {
+    gap: 10%;
   }
 }
