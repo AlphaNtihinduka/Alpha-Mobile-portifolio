@@ -307,6 +307,7 @@ ul {
   margin-right: 10px;
   font-size: 12px;
   margin-bottom: 15px;
+  display: inline-block;
 }
 
 .pop-link button {
@@ -781,3 +782,7 @@ ul {
     gap: 10%;
   }
 }
+
+margin-bottom: 16px;
+    margin-left: 15px;
+    display: inline-block
