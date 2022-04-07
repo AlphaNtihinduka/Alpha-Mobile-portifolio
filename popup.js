@@ -15,6 +15,15 @@ const emailInput = document.querySelector(".email");
 const submitButton = document.querySelector(".see-prjct-footer");
 const errorMessage = document.querySelector(".error-message");
 
+form.addEventListener("submit", (e)=>{
+  if(emailInput.value.match(/^[a-z@.0-9-_]*$/)){
+      errorMessage.style.display = "none";
+  } else {
+      e.preventDefault();
+      errorMessage.style.display = "flex";
+  }
+})
+
 const popupObj = [
   {
     name: 'Tonic',
