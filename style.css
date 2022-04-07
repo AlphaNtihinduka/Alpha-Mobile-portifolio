@@ -310,6 +310,10 @@ ul {
   display: inline-block;
 }
 
+hr {
+  color: #ebecf0;
+}
+
 .pop-link button {
   border: 1px solid #6070ff;
   color: #6070ff;
