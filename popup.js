@@ -207,7 +207,7 @@ btnPopup4.addEventListener('click', () => {
 
   let output = '';
 
-  popupObj[objtracker.technologies.forEach((techContent) => {
+  popupObj[objtracker].technologies.forEach((techContent) => {
     output += `
           <span> ${techContent} </span>
       `;
