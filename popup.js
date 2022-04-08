@@ -280,11 +280,7 @@ function toWebServer() {
   localStorage.setItem('formInputs', JSON.stringify(formInputs));
 }
 
-<<<<<<< HEAD
-function fromwebServer() {
-=======
-function fromWeberver() {
->>>>>>> e1a07b8b211ad9801b334126580ceea2def8be81
+function fromWebServer() {
   const formInputs = JSON.parse(localStorage.getItem('formInputs')) || {
     inputName: '',
     inputEmail: '',
