@@ -207,7 +207,7 @@ btnPopup4.addEventListener('click', () => {
 
   let output = '';
 
-  popupObj[objtracker].technologies.forEach((techContent) => {
+  popupObj[objtracker.technologies.forEach((techContent) => {
     output += `
           <span> ${techContent} </span>
       `;
@@ -280,7 +280,11 @@ function toWebServer() {
   localStorage.setItem('formInputs', JSON.stringify(formInputs));
 }
 
+<<<<<<< HEAD
 function fromwebServer() {
+=======
+function fromWeberver() {
+>>>>>>> e1a07b8b211ad9801b334126580ceea2def8be81
   const formInputs = JSON.parse(localStorage.getItem('formInputs')) || {
     inputName: '',
     inputEmail: '',
