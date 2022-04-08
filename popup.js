@@ -291,8 +291,8 @@ function fromWebServer(){
 
 if (storageAvailable('localStorage')) {
   fromWebServer();
-  nameInput.oninput = toWebServer;
-  emailInput.oninput = toWebServer;
-  textInput.oninput = toWebServer;
+  nameInput.onchange = toWebServer;
+  emailInput.onchange = toWebServer;
+  textInput.onchange = toWebServer;
 }
 
