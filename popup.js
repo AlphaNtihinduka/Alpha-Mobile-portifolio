@@ -252,3 +252,14 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'flex';
   }
 });
+
+const nameInput = document.querySelector(".name");
+const textInput = document.querySelector(".message");
+function toWebServer(){
+  const formInputs = {
+    inputName: nameInput.value,
+    inputEmail: emailInput.value,
+    inputText: textInput.value,
+  };
+  localStorage.setItem('formInputs', JSON.stringify(formInputs))
+}
