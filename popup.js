@@ -263,3 +263,12 @@ function toWebServer(){
   };
   localStorage.setItem('formInputs', JSON.stringify(formInputs))
 }
+
+function fromWebServer(){
+  const formInputs = JSON.parse(localStorage.getItem('formInputs')) || {  inputName: "",
+    inputEmail: "",
+    inputText: "",};
+    nameInput.value = formInputs.inputName;
+    emailInput.value = formInputs.inputEmail;
+    textInput.value = formInputs.inputText;
+}
