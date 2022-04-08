@@ -253,8 +253,8 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const nameInput = document.querySelector(".name");
-const textInput = document.querySelector(".message");
+const nameInput = document.querySelector('.name');
+const textInput = document.querySelector('.message');
 
 function storageAvailable(type) {
   let storage;
@@ -271,22 +271,24 @@ function storageAvailable(type) {
   }
 }
 
-function toWebServer(){
+function toWebServer() {
   const formInputs = {
     inputName: nameInput.value,
     inputEmail: emailInput.value,
     inputText: textInput.value,
   };
-  localStorage.setItem('formInputs', JSON.stringify(formInputs))
+  localStorage.setItem('formInputs', JSON.stringify(formInputs));
 }
 
-function fromWebServer(){
-  const formInputs = JSON.parse(localStorage.getItem('formInputs')) || {  inputName: "",
-    inputEmail: "",
-    inputText: "",};
-    nameInput.value = formInputs.inputName;
-    emailInput.value = formInputs.inputEmail;
-    textInput.value = formInputs.inputText;
+function fromWebServer() {
+  const formInputs = JSON.parse(localStorage.getItem('formInputs')) || {
+    inputName: '',
+    inputEmail: '',
+    inputText: '',
+  };
+  nameInput.value = formInputs.inputName;
+  emailInput.value = formInputs.inputEmail;
+  textInput.value = formInputs.inputText;
 }
 
 if (storageAvailable('localStorage')) {
@@ -295,4 +297,3 @@ if (storageAvailable('localStorage')) {
   emailInput.onchange = toWebServer;
   textInput.onchange = toWebServer;
 }
-
